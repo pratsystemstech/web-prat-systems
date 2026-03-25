@@ -1,0 +1,22 @@
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'PRAT SYSTEMS | Automatización y sistemas digitales',
+  description:
+    'Automatización, IA y sistemas digitales para empresas que quieren ahorrar tiempo, mejorar procesos y captar más clientes.',
+  openGraph: {
+    title: 'PRAT SYSTEMS',
+    description:
+      'Soluciones de automatización, IA y sistemas digitales para empresas.',
+    type: 'website'
+  }
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  );
+}
