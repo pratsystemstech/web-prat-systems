@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.pratsystems.asistentepersonal'
+    compileSdk 35
+    defaultConfig {
+        applicationId "com.pratsystems.asistentepersonal"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "0.1.0"
+    }
+}
+
+dependencies {
+    implementation 'com.google.mlkit:text-recognition:16.0.1'
+}
