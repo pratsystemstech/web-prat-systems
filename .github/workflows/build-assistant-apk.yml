@@ -6,11 +6,6 @@ on:
     paths:
       - 'android-assistant/**'
       - '.github/workflows/build-assistant-apk.yml'
-  pull_request:
-    branches: [main]
-    paths:
-      - 'android-assistant/**'
-      - '.github/workflows/build-assistant-apk.yml'
   workflow_dispatch:
 
 jobs:
@@ -34,5 +29,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: AsistentePersonal-MVP-0.1
+          name: AsistentePersonal-MVP-0.3
           path: android-assistant/app/build/outputs/apk/debug/app-debug.apk
